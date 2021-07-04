@@ -8,10 +8,11 @@ let current_game_array = []
 const random_color = () => {
   return COLORS[ Math.floor( Math.random() * 4 ) ]
 }
-
-// test 10 colours
-for (let i = 0; i < 10; i++) {
-  current_game_array.push(random_color())
-}
-
-console.log(current_game_array)
+console.log("Hello")
+document.getElementById("generator").addEventListener('click', () => {
+  for (let i = 0; i < 10; i++) {
+    current_game_array.push(random_color())
+  }
+  // output array
+  document.getElementById("output-screen").textContent = `${current_game_array}`
+})

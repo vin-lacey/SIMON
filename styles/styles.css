@@ -3,3 +3,6 @@ body {
   margin: 0;
 }
 /* typography */
+body {
+  font-family: Helvetica, 'Open Sans', sans-serif;
+}
